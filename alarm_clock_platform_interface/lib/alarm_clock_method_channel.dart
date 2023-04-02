@@ -7,6 +7,5 @@ import 'alarm_clock_platform_interface.dart';
 class MethodChannelAlarmClock extends AlarmClockPlatform {
   /// The method channel used to interact with the native platform.
   @visibleForTesting
-  final methodChannel = const MethodChannel('alarm_clock');
-
+  final methodChannel = const MethodChannel('com.mathiasgodwin/alarm_clock');
 }
