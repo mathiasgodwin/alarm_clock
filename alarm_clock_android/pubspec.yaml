@@ -28,3 +28,4 @@ flutter:
       android:
         package: com.mathiasgodwin.alarm_clock_android
         pluginClass: AlarmClockAndroidPlugin
+        dartPlugin: AlarmClockAndroid
