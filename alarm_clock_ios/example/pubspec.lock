@@ -8,6 +8,13 @@ packages:
       relative: true
     source: path
     version: "0.0.1"
+  alarm_clock_platform_interface:
+    dependency: transitive
+    description:
+      path: "../../alarm_clock_platform_interface"
+      relative: true
+    source: path
+    version: "0.0.1"
   async:
     dependency: transitive
     description:
