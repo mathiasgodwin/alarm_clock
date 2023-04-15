@@ -4,16 +4,18 @@ import 'package:alarm_clock_platform_interface/alarm_clock_platform_interface.da
 
 export 'package:alarm_clock_platform_interface/alarm_clock_platform_interface.dart';
 
+AlarmClockPlatform get _platform => AlarmClockPlatform.instance;
+
 class AlarmClock {
   /// Static method to create Alarm with the option to show the Alarm App
   /// the platform
-  static Future<void> createAlarm({
+  Future<void> createAlarm({
     required int hour,
     required int minutes,
     String? title,
     bool? showAlarmApp,
   }) async {
-    await AlarmClockPlatform.createAlarm(
+    await _platform.createAlarm(
       hour: hour,
       minutes: minutes,
       title: title,
@@ -23,12 +25,12 @@ class AlarmClock {
 
   /// Create a timer with the option to show the Alarm App
   /// for the platform
-  static Future<void> createTimer({
+  Future<void> createTimer({
     required int duration,
     String? title,
     bool? showAlarmApp,
   }) async {
-    await AlarmClockPlatform.createTimer(
+    await _platform.createTimer(
       duration: duration,
       title: title,
       showAlarmApp: showAlarmApp,

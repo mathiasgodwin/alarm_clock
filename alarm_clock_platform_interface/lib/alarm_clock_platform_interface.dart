@@ -23,7 +23,7 @@ abstract class AlarmClockPlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  static Future<void> createAlarm({
+   Future<void> createAlarm({
     required int hour,
     required int minutes,
     String? title,
@@ -32,7 +32,7 @@ abstract class AlarmClockPlatform extends PlatformInterface {
     throw UnimplementedError('setAlarm() not implemented');
   }
 
-  static Future<void> createTimer({
+   Future<void> createTimer({
     required int duration,
     String? title,
     bool? showAlarmApp,

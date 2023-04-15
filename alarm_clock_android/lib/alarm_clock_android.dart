@@ -11,7 +11,8 @@ class AlarmClockAndroid extends AlarmClockPlatform {
     AlarmClockPlatform.instance = AlarmClockAndroid();
   }
 
-  static Future<void> createAlarm({
+  @override
+  Future<void> createAlarm({
     required int hour,
     required int minutes,
     String? title,
@@ -25,7 +26,8 @@ class AlarmClockAndroid extends AlarmClockPlatform {
     });
   }
 
-  static Future<void> createTimer({
+  @override
+  Future<void> createTimer({
     required int duration,
     String? title,
     bool? showAlarmApp,

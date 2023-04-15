@@ -11,7 +11,8 @@ class AlarmClockIos extends AlarmClockPlatform {
     AlarmClockPlatform.instance = AlarmClockIos();
   }
 
-  static Future<void> createAlarm({
+  @override
+  Future<void> createAlarm({
     required int hour,
     required int minutes,
     String? title,
@@ -21,7 +22,8 @@ class AlarmClockIos extends AlarmClockPlatform {
         'createAlarm() method not yet supported for this platform');
   }
 
-  static Future<void> createTimer({
+  @override
+  Future<void> createTimer({
     required int duration,
     String? title,
     bool? showAlarmApp,
